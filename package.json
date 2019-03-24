@@ -2,16 +2,27 @@
   "name": "react-workshop-2019",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://yandex.ru",
   "dependencies": {
+    "@types/classnames": "^2.2.7",
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.11.6",
+    "@types/react": "^16.8.8",
+    "@types/react-dom": "^16.8.3",
+    "classnames": "^2.2.6",
+    "core-js": "^2.6.5",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "typescript": "^3.3.4000"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +32,27 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@storybook/addon-actions": "5.1.0-alpha.13",
+    "@storybook/addon-links": "5.1.0-alpha.13",
+    "@storybook/addon-viewport": "^3.4.12",
+    "@storybook/addons": "5.1.0-alpha.13",
+    "@storybook/react": "5.1.0-alpha.13",
+    "@types/react-test-renderer": "^16.8.1",
+    "@types/storybook__react": "^4.0.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "loki": "^0.14.2",
+    "react-test-renderer": "^16.8.5"
+  },
+  "loki": {
+    "configurations": {
+      "chrome.iphone7": {
+        "target": "chrome.docker",
+        "preset": "iPhone 7"
+      }
+    }
+  }
 }

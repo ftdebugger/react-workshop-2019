@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Demo render default 1`] = `
+Array [
+  <div
+    className="feed"
+  >
+    <div
+      className="card"
+    >
+      <div
+        className="card__image image"
+      >
+        <img
+          alt=""
+          className="image__image"
+          src="https://avatars.mds.yandex.net/get-pdb/998741/dce333dd-6f9c-4e84-ac40-d4c0654ef205/s375"
+        />
+      </div>
+      <div
+        className="card__profile"
+      >
+        <div
+          className="card__close"
+        >
+          <button
+            className="close"
+          >
+            <span
+              className="close__icon"
+            />
+          </button>
+        </div>
+        <div
+          className="person person_card"
+        >
+          <a
+            aria-label="text"
+            className="person__avatar"
+            href="https://yandex.ru/collections/user/drexxar/"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Сергей Глушков"
+          >
+            <img
+              alt="Сергей Глушков"
+              className="avatar"
+              src="https://avatars.mds.yandex.net/get-yapic/27232/591039997-1555108484/islands-retina-small"
+            />
+          </a>
+          <div
+            className="person__info"
+          >
+            <div
+              className="board"
+            >
+              <a
+                className="board__link"
+                href="https://yandex.ru/collections/user/drexxar/modnaia-boroda/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Модная борода
+              </a>
+            </div>
+            <div
+              className="user"
+            >
+              <a
+                className="user__link"
+                href="/collections/user/drexxar/"
+                target="_blank"
+              >
+                Сергей Глушков
+              </a>
+            </div>
+            <div
+              className="date"
+            >
+              <span
+                className="date__desc"
+              >
+                15 дней назад
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="card__article article"
+        >
+          <div
+            className="article__desc"
+          >
+            Как выбрать правильную форму бороды, как отрастить её и стоит ли девушке относиться к ней негативно.
+          </div>
+          <a
+            className="article__link"
+            href="http://bowandtie.ru/vse-chto-nuzhno-znat-o-borode-ili-oda-bradosti/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            bowandtie.ru
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="card"
+    >
+      <div
+        className="card__image image"
+      >
+        <img
+          alt=""
+          className="image__image"
+          src="https://avatars.mds.yandex.net/get-pdb/998741/dce333dd-6f9c-4e84-ac40-d4c0654ef205/s375"
+        />
+      </div>
+      <div
+        className="card__profile"
+      >
+        <div
+          className="card__close"
+        >
+          <button
+            className="close"
+          >
+            <span
+              className="close__icon"
+            />
+          </button>
+        </div>
+        <div
+          className="person person_card"
+        >
+          <a
+            aria-label="text"
+            className="person__avatar"
+            href="https://yandex.ru/collections/user/drexxar/"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Сергей Глушков"
+          >
+            <img
+              alt="Сергей Глушков"
+              className="avatar"
+              src="https://avatars.mds.yandex.net/get-yapic/27232/591039997-1555108484/islands-retina-small"
+            />
+          </a>
+          <div
+            className="person__info"
+          >
+            <div
+              className="board"
+            >
+              <a
+                className="board__link"
+                href="https://yandex.ru/collections/user/drexxar/modnaia-boroda/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Модная борода
+              </a>
+            </div>
+            <div
+              className="user"
+            >
+              <a
+                className="user__link"
+                href="/collections/user/drexxar/"
+                target="_blank"
+              >
+                Сергей Глушков
+              </a>
+            </div>
+            <div
+              className="date"
+            >
+              <span
+                className="date__desc"
+              >
+                15 дней назад
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="card__article article"
+        >
+          <div
+            className="article__desc"
+          >
+            Как выбрать правильную форму бороды, как отрастить её и стоит ли девушке относиться к ней негативно.
+          </div>
+          <a
+            className="article__link"
+            href="http://bowandtie.ru/vse-chto-nuzhno-znat-o-borode-ili-oda-bradosti/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            bowandtie.ru
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>,
+  <div
+    className="spinner spinner_screen"
+  >
+    <div
+      className="spinner__inner"
+    />
+  </div>,
+  <div
+    className="infinite spinner"
+  >
+    <div
+      className="spinner__inner"
+    />
+  </div>,
+]
+`;
