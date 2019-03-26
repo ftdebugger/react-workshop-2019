@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image no image 1`] = `null`;
+
+exports[`Image with image 1`] = `
+<div
+  className="image image_hidden"
+  style={
+    Object {
+      "minHeight": undefined,
+    }
+  }
+>
+  <img
+    className="image__image"
+    onLoad={[Function]}
+    src="https://avatars.mds.yandex.net/get-pdb/27625/7c81ce06-f70e-405b-87b4-fe826ba9362e/s375"
+  />
+</div>
+`;

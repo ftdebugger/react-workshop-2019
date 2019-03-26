@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner render default 1`] = `
+<div
+  className="spinner"
+>
+  <div
+    className="spinner__inner"
+  />
+</div>
+`;
+
+exports[`Spinner render screen mod 1`] = `
+<div
+  className="spinner spinner_screen"
+>
+  <div
+    className="spinner__inner"
+  />
+</div>
+`;

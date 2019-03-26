@@ -1,9 +1,9 @@
 import React from 'react';
 
-import {Demo} from './components/Demo/Demo';
+import {Feed} from './components/Feed/Feed';
 
 export default function App() {
     return (
-        <Demo />
+        <Feed />
     );
 }
