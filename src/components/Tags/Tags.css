@@ -1,0 +1,56 @@
+.tags {
+    height: 48px;
+    overflow-y: hidden;
+}
+
+.tags__scroll {
+    padding: 8px;
+    height: 100px;
+    overflow-x: scroll;
+}
+
+.tags__wrap {
+    white-space: nowrap;
+}
+
+.tag {
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    margin: 0 4px;
+    user-select: none;
+
+    font-size: 15px;
+    line-height: 32px;
+    padding: 0 16px;
+
+    background: #999;
+    outline: none;
+
+    transition: opacity 0.2s ease;
+}
+
+.tag:active {
+    opacity: 0.8;
+}
+
+.tag_active.tag_color_0 {
+    background: #ec2061;
+}
+
+.tag_active.tag_color_1 {
+    background: #f1524b;
+}
+
+.tag_active.tag_color_2 {
+    background: #5b69c3;
+}
+
+.tag_active.tag_color_3 {
+    background: #0099e8;
+}
+
+.tag_active.tag_color_4 {
+    background: #008b7b;
+}
