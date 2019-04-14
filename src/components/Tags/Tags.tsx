@@ -20,6 +20,8 @@ export interface TagsProps {
 
 export const Tags: React.FC<TagsProps> =
     function Tags({current, onClick}: TagsProps) {
+        console.log('render tags');
+
         return (
             <div className="tags">
                 <div className="tags__scroll">

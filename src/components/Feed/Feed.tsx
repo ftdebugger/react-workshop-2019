@@ -6,47 +6,38 @@ import {Spinner} from '../Spinner/Spinner';
 import {Card} from '../Card/Card';
 import {Infinite} from '../Infinite/Infinite';
 import {Cards} from '../Cards/Cards';
+import {Tags} from '../Tags/Tags';
+import {ConnectedTags} from '../ConnectedTags/ConnectedTags';
 
 export interface FeedProps {
-
-}
-
-interface ComponentState {
+    tag?: string;
     items?: CardSchema[];
-    next?: RequestQuery;
+    hasNext?: boolean;
+
+    fetch(reset: boolean): Promise<void>;
 }
 
-export class Feed extends React.Component<FeedProps, ComponentState> {
-    public state: ComponentState = {};
-
+export class Feed extends React.Component<FeedProps> {
     public componentDidMount(): void {
-        this.fetch().catch((error) => console.error(error));
+        this.props.fetch(true).catch((error) => console.error(error));
     }
 
-    async fetch(query: RequestQuery = {}) {
-        let url = new URL(location.href + '/collections/api/user/feed');
-
-        for (let [key, value] of Object.entries(query)) {
-            url.searchParams.append(key, String(value));
+    public componentDidUpdate(prevProps: Readonly<FeedProps>): void {
+        if (this.props.tag !== prevProps.tag) {
+            this.props.fetch(true).catch((error) => console.error(error));
         }
-
-        let response = await fetch(url.toString(), {credentials: 'same-origin'});
-        let {next, results}: CollectionSchema<CardSchema> = await response.json();
-        let {items = []} = this.state;
-
-        this.setState({items: items.concat(results), next});
     }
 
     async fetchNext() {
-        let {next} = this.state;
+        let {hasNext} = this.props;
 
-        if (next) {
-            await this.fetch(next);
+        if (hasNext) {
+            await this.props.fetch(false);
         }
     }
 
     render() {
-        let {next, items} = this.state;
+        let {hasNext, items} = this.props;
 
         if (!items) {
             return (
@@ -54,14 +45,16 @@ export class Feed extends React.Component<FeedProps, ComponentState> {
             );
         }
 
-        console.log(next, items)
-
         return (
-            <Cards
-                items={items}
-                hasNext={Boolean(next)}
-                fetchNext={() => this.fetchNext()}
-            />
+            <>
+                <ConnectedTags />
+
+                <Cards
+                    items={items}
+                    hasNext={hasNext}
+                    fetchNext={() => this.fetchNext()}
+                />
+            </>
         );
     }
 
